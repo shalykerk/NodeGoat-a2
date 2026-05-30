@@ -18,7 +18,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          SONAR_TOKEN: 4d352eb7d5eaecee08be13de33c185bc9aeabcfb
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
             -Dsonar.projectKey=shalykerk_NodeGoat-a2
